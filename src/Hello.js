@@ -1,9 +1,9 @@
 import React from "react";
 
-function Hello() {
+function Hello({name}) {
     return(
         <div>
-            <h1>Hello, CSE340!!!</h1>
+            <h1>Hello, {!name ? 'CSE 340': name}!!!</h1>
         </div>
     )
 }
