@@ -1,15 +1,31 @@
 # WHAT?
 
-A simple project that helped me practice the core features of React.js.
-The goal was to understand the minimal requirements to use React, and play around with (the main concepts)[https://react.dev/learn/thinking-in-react]:
+A simple project that helped me practice the core features of [React.js](https://react.dev/).
+The goal was to understand the minimal requirements to use React, and play around with [the main concepts](https://react.dev/learn/thinking-in-react):
   - Components
   - State
   - Inverse data flow
+
 
 # TIMELINE
 
 1. First I tried to setup a simple React project using NPM and WEBPACK (commit [#c1436e6](https://github.com/nigini/react-playground/commit/c1436e663533e2f387e64aac70840599dbd8eaac))
 2. Then I added a simple Hello component and used BOOTSTRAP to make it all look nicer (commit [#6d82a8d](https://github.com/nigini/react-playground/commit/6d82a8d23936e559980bea5054e026b135fbcf97))
+
+# EXECUTE
+
+To run this project you will need NODE and NPM installed. I tried it with:
+  - Node (18.13.0) + NPM (9.6.7)
+  - Node (20.10.0) + NPM (10.2.3)
+
+Execute it with:
+```shell
+> npm install
+# DIST
+> npm build
+# DEV
+> npm serve
+```
 
 # REFERENCES
 
