@@ -1,9 +1,8 @@
 import React from "react";
-import { createRoot } from 'react-dom';
+import { render } from 'react-dom';
+import Hello from "./Hello";
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
-
-// Render your React component instead
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, CS340!</h1>);
+render(
+    <Hello />,
+    document.getElementById('app')
+);
