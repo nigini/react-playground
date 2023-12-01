@@ -12,12 +12,12 @@ The goal was to understand the minimal requirements to use React, and play aroun
 1. First I tried to setup a simple React project using NPM and WEBPACK (commit [#c1436e6](https://github.com/nigini/react-playground/commit/c1436e663533e2f387e64aac70840599dbd8eaac))
 2. Then I added a simple Hello component and used BOOTSTRAP to make it all look nicer (commit [#6d82a8d](https://github.com/nigini/react-playground/commit/6d82a8d23936e559980bea5054e026b135fbcf97))
 3. Passing a PROP to the Component (commit[#71f036d](https://github.com/nigini/react-playground/commit/71f036df62af8d74cce05ac251812a3bf7bdb28c))
-4. Created a simple button Component and a Page with a state (commit [#]())
+4. Created a simple button Component and a Page with a state (commit [#8cab81b](https://github.com/nigini/react-playground/commit/8cab81b9ef6a47d0a7d594dc07919d73b573de6d))
 
 ## NEXT STEPS
 
 1. Finishing up a ClickGame that tracks how fast one can click some buttons on the screen.
-3. Get a litte more sophisticated with CSS & SASS
+2. Get a litte more sophisticated with CSS & SASS
 
 # EXECUTE
 

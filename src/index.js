@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { createRoot } from 'react-dom/client';
 import Hello from "./Hello";
 import GameButton from "./GameButton";
+import GameProgress from "./GameProgress";
 
 
 
@@ -12,8 +13,11 @@ root.render(
 );
 
 function Page() {
+    //PAGE CONFIG
+    const MAX_CLICKS = 10
     //PAGE STATE
     const [clickCount, setCount] = useState(0)
+    const [progress, setProgress] = useState(0)
     const [gameOver, setGameOver] = useState(false)
     let getName = () => {
         let params = new URLSearchParams(document.location.search);
@@ -22,8 +26,9 @@ function Page() {
 
     let incrementGameState = () => {
         setCount(clickCount+1)
-        console.log(`STATE: ${clickCount}`)
-        if(clickCount > 5) {
+        setProgress(Math.floor(clickCount/MAX_CLICKS*100))
+        console.log(`PROGESS: ${progress}`)
+        if(clickCount >= MAX_CLICKS) {
             console.log('GAME OVER!')
             setGameOver(true)
         }
@@ -32,6 +37,7 @@ function Page() {
     return (
         <div>
             <Hello name={getName()}/>
+            <GameProgress completionPerc={progress}/>
             <GameButton  disabled={gameOver} actionText={"Click ME!"} onButtonClick={incrementGameState}/>
         </div>
     )
