@@ -1,6 +1,6 @@
 # WHAT?
 
-A simple project that helped me practice the core features of [React.js](https://react.dev/).
+A simple project that helped me practice building Web UI with [React.js](https://react.dev/).
 The goal was to understand the minimal requirements to use React, and play around with [the main concepts](https://react.dev/learn/thinking-in-react):
   - Components
   - State
@@ -11,6 +11,13 @@ The goal was to understand the minimal requirements to use React, and play aroun
 
 1. First I tried to setup a simple React project using NPM and WEBPACK (commit [#c1436e6](https://github.com/nigini/react-playground/commit/c1436e663533e2f387e64aac70840599dbd8eaac))
 2. Then I added a simple Hello component and used BOOTSTRAP to make it all look nicer (commit [#6d82a8d](https://github.com/nigini/react-playground/commit/6d82a8d23936e559980bea5054e026b135fbcf97))
+3. Passing a PROP to the Component (commit[80fe0d4](https://github.com/nigini/react-playground/commit/80fe0d46d028bf9da162409610c2fce074a424b0))
+
+## PLANS
+
+1. Play with UI State
+2. Play with UI Reactivity
+3. Get a litte more sophisticated with CSS & SASS
 
 # EXECUTE
 

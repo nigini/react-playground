@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Hello from "./Hello";
 
 let getName = () => {
@@ -7,7 +7,8 @@ let getName = () => {
     return params.get('name');
 }
 
-render(
-    <Hello name={getName()}/>,
-    document.getElementById('app')
+let container = document.getElementById('app')
+let root = createRoot(container)
+root.render(
+    <Hello name={getName()}/>
 );
